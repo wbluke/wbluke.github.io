@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>도메인 변경으로 인한 포워딩</title> 
+        <link rel="canonical" href="https://wbluke.tistory.com">
+        <script type='text/javascript'> 
+            const dest = "https://wbluke.tistory.com";
+
+            function canonicalLink() { 
+                const link = document.getElementsByTagName("link")[0]; 
+                link.setAttribute('href', dest + location.pathname); 
+                document.head.appendChild(link);
+            } 
+            
+            function domainRedirect() { 
+                const origin = location.origin;
+                const href = location.href;
+                const destination = href.replace(origin, dest);
+
+                location.href = destination;
+            } 
+        
+            canonicalLink(); 
+            domainRedirect(); 
+        </script> 
+    </head> 
+    <body> 
+        도메인 변경으로 인한 포워딩
+    </body> 
+</html>
