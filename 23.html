@@ -3,7 +3,7 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>도메인 변경으로 인한 포워딩</title> 
+        <title>도메인 변경으로 인한 리다이렉트</title> 
         <link rel="canonical" href="https://wbluke.tistory.com">
         <script type='text/javascript'> 
             const dest = "https://wbluke.tistory.com";
@@ -19,7 +19,7 @@
                 const href = location.href;
                 const destination = href.replace(origin, dest);
 
-                location.href = destination;
+                location.replace(destination);
             } 
         
             canonicalLink(); 
