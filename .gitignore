@@ -70,3 +70,7 @@ yarn-error.log
 
 # IntelliJ
 .idea/
+
+# Redux cache
+reduxcachemMoIpB/
+reduxcacheMTrvmi/
