@@ -91,4 +91,9 @@ body.dark {
     height: 60px;
     background: $theme-gradient-dark;
   }
+
+  .gatsby-resp-image-wrapper {
+    width: 80%;
+  }
+
 }
