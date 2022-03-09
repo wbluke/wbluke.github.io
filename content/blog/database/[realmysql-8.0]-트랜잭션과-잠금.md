@@ -99,3 +99,8 @@ MySQL 5.1부터는  `information_schema` 데이터베이스의 `INNODB_TRX`, `IN
     - PHANTOM READ가 발생하지 않는다.
 
 뒤로 갈수록 각 트랜잭션 간의 데이터 격리(고립) 정도가 높아지며, 동시 처리 성능도 떨어지는 것이 일반적이다.  
+
+## 참고
+
+[Real MySQL 8.0](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791158392703)  
+
